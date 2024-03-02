@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+   
+    <header>
+        <img src="image/titre.png" alt="">
+    </header>
+
+    <div class="content">
+        <img src="image/tete.png">
+    </div>
+
+    <div>
+        <h2>What's your favorite?</h2>
+    </div>
+      <button class="backbutton" onclick="goToHome()">back</button>
+        
+    <div class="categories">
+        <a href="#" class="category low" onclick="showCategory('low')">
+            <img class="zoom" src="image/low.png" alt="low">
+        </a>
+        <a href="#" class="category high" onclick="showCategory('high')">
+            <img class="zoom" src="image/high.png" alt="high">
+        </a>
+        <a href="#" class="category casual" onclick="showCategory('casual')">
+            <img class="zoom" src="image/casual.png" alt="casual">
+        </a>
+        <a href="#" class="category athletic" onclick="showCategory('athletic')">
+            <img class="zoom" src="image/athletic.png" alt="athletic">
+        </a>
+    </div>
+    
+    <div class="image-container" id="low-image">
+        <p class="text-img">
+            <img src="image/sneakers1.jpg" alt="Low" class="inline-img">
+            Low-top sneakers born in the 1970s blend fashion and sports history
+            Initially designed as casual alternatives to iconic models they quickly
+            became symbols of streetwear Today these shoes are a fashion
+            staple,comfortable and casually elegant appeal.
+        </p>
+        <div class="image-none">
+        <img class="modal-trigger"
+            data-text="The Nike Dunk Panda, a streetwear icon, blends striking style with casual charm. 
+            Featuring a distinctive pattern and vibrant colors, it stands as the best-selling sneaker embodying the essence of urban fashion."
+            src="image/dunk.png" alt="low">
+        <img class="modal-trigger"
+            data-text="The Adidas Campus 00's reimagines retro style with a modern twist. This iconic sneaker, reminiscent of the 2000s, 
+            blends classic design with quality materials, providing a nostalgic aesthetic while remaining undeniably trendy."
+            src="image/campus.png" alt="low">
+        <img class="modal-trigger" data-text="The New Balance 9060 epitomizes athletic elegance, with clean lines and modern design. 
+        Its premium leather upper ensures enduring comfort, complemented by a REVlite midsole for lightweight, responsive cushioning.
+        " src="image/nb9060.png" alt="low">
+        <img class="modal-trigger" data-text="The Asics Kamayo epitomizes the perfect blend of contemporary style and performance. With its dynamic design, 
+            exceptional cushioning, and precise fit, this shoe provides optimal comfort ." src="image/asics.png"
+            alt="low">
+        </div>
+    </div>
+    </div>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <p class="modal-text">
+                <!-- The Nike Dunk Panda a streetwear icon,</br>
+             blends striking style with casual charm.</br>
+             Featuring a distinctive pattern and vibrant colors,</br>
+             it stands as the best-selling sneaker</br>
+             embodying the essence of urban fashion. -->
+            </p>
+        </div>
+    </div>
+
+    <div class="image-container" id="high-image">
+        <p class="text-img">
+            <img src="image/sneakers3.jpg" alt="" class="inline-img">
+            High-top sneakers emerged in the 1980s as a symbol of bold style
+            Featuring a silhouette that wraps around the ankle</br>
+            these shoes offera unique blend of support urban flair</br>
+            adding a distinctive touch to any casual outfit.
+        </p>
+        <div class="image-none">
+        <img class="modal-trigger"
+            data-text="The Jordan Air Travis Scott epitomizes the bold fusion of streetwear and sneaker culture.
+            Designed in collaboration with the artist and rapper Travis Scott, this iconic sneaker stands out with its unique design."
+            src="image/travis.png" alt="high">
+        <img class="modal-trigger"
+            data-text="Converse Run seamlessly merges iconic casual style with performance design, offering a modern silhouette, 
+        responsive midsole, and exceptional comfort for versatile terrain. The sneakers maintain the brand's timeless aesthetic."
+            src="image/converse.png" alt="high">
+        <img class="modal-trigger" data-text="The Jordan 11, with their iconic silhouette and translucent outsole, epitomize the pinnacle of style and performance.
+        Worn both on the basketball court and on the streets." src="image/jordan.png" alt="high">
+        <img class="modal-trigger" data-text="The Vans High sneakers redefine urban cool with their timeless design and versatile style. Known for their iconic
+         silhouette and durable construction." src="image/vans.png" alt="high">
+        </div>
+    </div>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <p class="modal-text">
+                <!-- The Nike Dunk Panda a streetwear icon,</br>
+             blends striking style with casual charm.</br>
+             Featuring a distinctive pattern and vibrant colors,</br>
+             it stands as the best-selling sneaker</br>
+             embodying the essence of urban fashion. -->
+            </p>
+        </div>
+    </div>
+    <div class="image-container" id="athletic-image">
+        <p class="text-img">
+            <img src="image/sneakers2.jpg" alt="" class="inline-img">
+            Athletic sneakers are crafted to seamlessly blend performance
+            Featuring cutting-edge technology, and dynamic designs
+            shoes are the ideal for sports enthusiasts and fashion aficionados
+            fusion of functionality and aesthetics.
+        </p>
+        <div class="image-none">
+        <img class="modal-trigger" data-text="On Running redefines the running experience with its innovative footwear. Engineered for lightweight comfort and performance.
+          On Running shoes blend cutting-edge technology." src="image/running.png" alt="athletic">
+        <img class="modal-trigger" data-text="Asics athletic sneakers seamlessly blend cutting-edge technology with dynamic designs, providing the perfect fusion of performance
+          Elevate your sports enthusiasm with footwear." src="image/asics gel.png" alt="athletic">
+        <img class="modal-trigger" data-text="Nike casual sneaker seamlessly blend urban style with exceptional comfort. With a modern design and high-quality materials,
+         she is essential for laid-back elegance in everyday wear." src="image/zoom500.png" alt="casual">
+        <img class="modal-trigger" data-text="Nike casual sneaker seamlessly blend urban style with exceptional comfort. With a modern design and high-quality materials,
+         she is essential for laid-back elegance in everyday wear." src="image/under (3).png" alt="casual">
+    </div>
+    </div>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <p class="modal-text">
+                <!-- The Nike Dunk Panda a streetwear icon,</br>
+             blends striking style with casual charm.</br>
+             Featuring a distinctive pattern and vibrant colors,</br>
+             it stands as the best-selling sneaker</br>
+             embodying the essence of urban fashion. -->
+            </p>
+        </div>
+    </div>
+
+    <div class="image-container" id="casual-image">
+        <p class="text-img">
+            <img src="image/sneakers1.jpg" alt="" class="inline-img">
+            Casual sneakers seamlessly blend modern style with optimal comfort embodying</br>
+            the essence of laid-back chic.</br> Perfect for any casual occasion</br>
+            these versatile shoes add a touch of elegance to every step.
+        </p>
+        <div class="image-none">
+        <img class="modal-trigger" data-text="The New Balance 530 embodies the perfect blend of comfort and style. With its sleek design and ENCAP midsole providing excellent
+          cushioning, this iconic sneaker is a versatile choice for a casual and trendy look." 
+          src="image/nb530.png"
+            alt="casual">
+        <img class="modal-trigger" data-text="The Yeezy 350, a true streetwear phenomenon, effortlessly combines comfort and style. With its iconic design and unparalleled popularity,
+        these sneakers stand as a symbol of contemporary fashion and cultural influence."
+         src="image/yeezy350.png"
+            alt="casual">
+        <img class="modal-trigger" data-text="Nike Air Force One sneakers are urban fashion icons, cherished for their timeless design
+        and exceptional comfort. Worn by generations of sneaker enthusiasts, they remain an iconic expression of casual and streetwear style."
+         src="image/Air force.png"
+            alt="casual">
+        <img class="modal-trigger" data-text="Adidas Samba sneakers are revered in urban fashion for their classic design and unmatched comfort.
+        Embraced by sneaker enthusiasts across generations, they stand as an enduring symbol of casual and streetwear style."
+         src="image/samba.png" alt="casual">
+    </div>
+    </div>
+    <div class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <p class="modal-text">
+                <!-- The Nike Dunk Panda a streetwear icon,</br>
+             blends striking style with casual charm.</br>
+             Featuring a distinctive pattern and vibrant colors,</br>
+             it stands as the best-selling sneaker</br>
+             embodying the essence of urban fashion. -->
+            </p>
+        </div>
+    </div>
+
+
+    <article class="container">
+        <img src="image/sneakers.jpg" alt="box">
+        <p class="homepage">
+            Originally simple athletic shoes sneakers have
+            transformed into a statement of style and identity
+            blending innovation and avant-garde design 
+            to leave an indelible mark on fashion.
+        </p>
+    </article>
+
+    <footer>
+        <div class="media">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <img src="image/facebook.png" alt="Facebook">
+            </a>
+        </div>
+
+        <div class="media">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                <img src="image/instagram.png" alt="instagram">
+            </a>
+        </div>
+        <div class="end">
+            <p> Copyright &copy.2024 CalesseSabrina</p>
+        </div>
+    </footer>
+
+
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
