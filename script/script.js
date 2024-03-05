@@ -11,7 +11,7 @@ function hideAllElements() {
     h2.style.display = 'none';
 
 }function goToHome() {
-    window.location.href = "http://127.0.0.1:5500/index.html";
+    window.location.href = "https://sabrina077.github.io/SoleStories/index.html";
 }
 
 function hideCategoryImages(category) {
